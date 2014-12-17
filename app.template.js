@@ -10,18 +10,19 @@ var data = [0, 1, 2, 3, 4];
 /* Solucion */
 
 (function() {
-	/*
 
-	No se puede poner codigo fuera de esta funcion.
-	No se pueden usar operadores aritmeticos en ninguna parte.
-	<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators>
+	
+	Object.freeze(data)
+	// No se puede poner codigo fuera de esta funcion.
+	// No se pueden usar operadores aritmeticos en ninguna parte.
+	// <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators>
 
-	*/
+	
 
 
 })();
 
-/* El problema. Se tiene que cumplir (data[0]+data[1]+data[2]+data[3]+data[4] === 10)*/
+/* El problema. Se tiene que cumplir (data[0]+data[1]+data[2]+data[3]+data[4] === 10)  <-- esta condicion es obligatoria? o solo debe pasar el test?
 /* No se puede tocar absolutamente nada del codigo bajo esta linea */
 
 for (var i = 0; i < 5; i++) {
@@ -41,3 +42,4 @@ console.log('Ganaste!!!');
 /********************************************/
 
 /**/
+
