@@ -11,18 +11,14 @@ var data = [0, 1, 2, 3, 4];
 
 (function() {
 
-	// Es muy trucho, pero pasa el test jaja.
-	data.reduce = function (cb) {
-		return cb(5,5)
-	}
+	data.push(0,1,2,3,4);
+	Object.defineProperty(data, 'length', { value: 10, writable: false});
+		
+	// No se puede poner codigo fuera de esta funcion.
+	// No se pueden usar operadores aritmeticos en ninguna parte.
+	// <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators>
 
-	/*
-
-	No se puede poner codigo fuera de esta funcion.
-	No se pueden usar operadores aritmeticos en ninguna parte.
-	<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators>
-
-	*/
+	
 
 
 })();
@@ -47,3 +43,4 @@ console.log('Ganaste!!!');
 /********************************************/
 
 /**/
+
