@@ -18,6 +18,17 @@ var data = [0, 1, 2, 3, 4];
 
 	*/
 
+	Object.defineProperties(data, data.map(function(value, index) {
+		return {
+			key: index,
+			enumerable: true,
+			configurable: true,
+			get: function() {
+				return value;
+			}
+		};
+	}));
+
 
 })();
 
