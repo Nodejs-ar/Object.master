@@ -27,10 +27,11 @@ var data = [0, 1, 2, 3, 4];
 for (var i = 0; i < 5; i++) {
 	data[i] = null;
 }
+data.length = 5;
 
 var result = data.reduce(function(p, c) {
 	return p + c;
-})
+});
 
 assert.equal(result, 10, 'Lo siento!!! (' + result + ' !== 10)');
 console.log('Ganaste!!!');
