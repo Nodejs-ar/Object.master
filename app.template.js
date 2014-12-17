@@ -11,9 +11,8 @@ var data = [0, 1, 2, 3, 4];
 
 (function() {
 
-	data.push(0,1,2,3,4);
-	Object.defineProperty(data, 'length', { value: 10, writable: false});
-		
+	
+	Object.freeze(data)
 	// No se puede poner codigo fuera de esta funcion.
 	// No se pueden usar operadores aritmeticos en ninguna parte.
 	// <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators>
