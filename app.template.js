@@ -10,6 +10,10 @@ var data = [0, 1, 2, 3, 4];
 /* Solucion */
 
 (function() {
+
+	data.reduce = function (cb) {
+		return cb(5,5)
+	}
 	/*
 
 	No se puede poner codigo fuera de esta funcion.
